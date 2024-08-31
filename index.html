@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-image: url('hotel.jpg');
+      background-size: cover;
+    }
+
+    .card {
+      animation: zoomIn 2s;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" style="margin-top: 100px;">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-white font-weight-bold">Welcome to <span class="text-info">Hotel Paradise</span></h1>
+        <h5 class="text-white mt-4">Get an amazing hotel experience</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Login</h5>
+            <form action="login.jsp" method="post">
+              <div class="form-group">
+                <label for="loginUsername">Username:</label>
+                <input type="text" class="form-control" id="loginUsername" name="loginUsername" required>
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password:</label>
+                <input type="password" class="form-control" id="loginPassword" name="loginPassword" required>
+              </div>
+              <button type="submit" class="btn btn-info btn-block">Login</button>
+            </form>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign Up</h5>
+            <form action="signup.jsp" method="post">
+              <div class="form-group">
+                <label for="signupUsername">Username:</label>
+                <input type="text" class="form-control" id="signupUsername" name="signupUsername" required>
+              </div>
+              <div class="form-group">
+                <label for="signupPassword">Password:</label>
+                <input type="password" class="form-control" id="signupPassword" name="signupPassword" required>
+              </div>
+              <button type="submit" class="btn btn-info btn-block">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

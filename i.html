@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Include the GreenSock Animation Platform -->
+  <script src="https://unpkg.com/gsap@3.9.1"></script>
+  
+
+  <!-- Your existing head content -->
+  <!-- ... -->
+
+  <style>
+    /* Your existing styles */
+    body {
+      font-family: 'Lato',sans-serif;
+      margin: 0;
+      padding: 0;
+      background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hotel.jpg') center/cover no-repeat;
+      background-blend-mode: darken ;
+      color: #fff;
+    }
+
+    .container {
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      font-family: 'Pacifico', cursive;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      font-size: 18px;
+      margin: 10px;
+      font-family: 'Raleway', sans-serif;
+      border-radius: 5px;
+      letter-spacing: 1px;
+    }
+
+    #logoutBtn {
+      color: #fff;
+      background-color: #d9534f;
+      border-color: #d9534f;
+    }
+
+    #aboutBtn {
+      color: #fff;
+      background-color: #337ab7;
+      border-color: #337ab7;
+    }
+
+    #reserveBtn, #viewReservationBtn {
+      color: #fff;
+      background-color: #5bc0de;
+      border-color: #5bc0de;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="welcomeHeading">Welcome to Hotel Paradise</h1>
+    <p id="description">Experience luxury and comfort like never before. Book your stay now!</p>
+
+    <!-- Buttons -->
+    <a href="#" id="logoutBtn" class="btn btn-danger">Logout</a>
+    <a href="#" id="aboutBtn" class="btn btn-primary">About Hotel</a>
+    <a href="#" id="reserveBtn" class="btn btn-success">Reserve a Room</a>
+    <a href="#" id="viewReservationBtn" class="btn btn-success">View Reservations</a>
+
+    <!-- Hotel Details -->
+    <div id="hotelDetails" style="margin-top: 50px;">
+      <h2>Hotel Details</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros quis dapibus condimentum, elit sem tristique erat, sit amet ultrices felis urna eget dolor.</p>
+    </div>
+
+    <!-- Offers -->
+    <div id="offers" style="margin-top: 50px;">
+      <h2>Special Offers</h2>
+      <p>Check out our special offers and enjoy exclusive discounts during your stay. Don't miss out on these amazing deals!</p>
+    </div>
+  </div>
+
+  <!-- JavaScript for animations -->
+  <script>
+    // Animation for welcome heading
+    gsap.from("#welcomeHeading", { opacity: 0, y: -50, duration: 1, delay: 0.5 });
+
+    // Animation for description
+    gsap.from("#description", { opacity: 0, y: 50, duration: 1, delay: 1 });
+
+    // Animation for buttons
+    gsap.from(".btn", { opacity: 0, y: 20, duration: 1, delay: 1.5 });
+
+    // Animation for hotel details
+    gsap.from("#hotelDetails", { opacity: 0, y: 30, duration: 1, delay: 2 });
+
+    // Animation for offers
+    gsap.from("#offers", { opacity: 0, y: 30, duration: 1, delay: 2.5 });
+  </script>
+</body>
+</html>

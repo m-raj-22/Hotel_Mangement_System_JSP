@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome-message {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.features, .offers, .events {
+    margin-top: 20px;
+}
+
+.features h3, .offers h3, .events h3 {
+    color: #007bff;
+}
+
+.features ul, .offers ul, .events ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li, .offers li, .events li {
+    padding: 8px 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logout-link {
+    margin-top: 20px;
+}
+
+.logout-link a {
+    color: #dc3545;
+}
